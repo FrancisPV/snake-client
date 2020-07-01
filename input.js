@@ -11,7 +11,11 @@ const handleUserInput = (key) => {
     connection.write('Move: down')
   } else if (key === 'd') {
     connection.write('Move: right')
-    } 
+    } else if (key === 'g') {
+      connection.write('Say: GG')
+    } else if (key === 'm') {
+      connection.write('Say: Have fun!')
+    }
   };
 
 const setupInput = function(conn) {
